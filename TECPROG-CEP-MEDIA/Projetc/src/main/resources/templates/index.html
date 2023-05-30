@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Projeto de Montagem de Rotas</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* Estilos globais */
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #feeeff;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* Estilos do navbar */
+    .navbar {
+      background-color: #E6E6FA;
+      color: whitesmoke;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+    }
+
+    .navbar a {
+      color: black;
+      text-decoration: none;
+      margin-right: 1px;
+    }
+
+    /* Estilos do conteúdo principal */
+    .main-content {
+      background-color: #F5E1FF;
+      padding: 20px;
+      margin-top: 20px;
+    }
+
+    .main-content h1 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .main-content p {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+<header class="navbar">
+  <a href="/notas">CALCULAR NOTA</a>
+  <a href="/cep">CEP</a>
+  <a href="#">Sobre Nós</a>
+</header>
+
+<div class="container">
+  <div class="main-content">
+    <h1>Projeto de Montagem de Rotas</h1>
+    <p>Esse é um projeto de montagem de rotas, utilizando SpringBoot, dependências e API de CEP. Trabalhamos com o padrão Factory Method.</p>
+    <p>Para acessar as rotas basta digitar <b>localhost:4000/notas</b> para acessar a rota de cálculo de notas.</p>
+    <p>Para acessar as rotas basta digitar <b>localhost:4000/cep</b> para acessar a rota de cep.</p>
+    <P> Mas basta também clicar no NAVBAR e escolher qual serviço deseja acessar</P>
+    <P> Utilizamos o padrão MVC(Model-View-Controller) nesse projeto</P>
+    <P> Temos o Model sendo endereco.java e EnderecoFactory.java armazenando informações de endereço</P>
+    <P> Temos VIEW em cada um dos templates</P>
+    <P> O sistema possui 3 controllers, sendo cepController, IndexController e Notas Controller</P>
+    <P> Utilizamos Factory Method criando a classe "EnderecoFactory.java" que encapsula </P>
+    <P> a lógica de criação de instâncias da classe "endereco". Ele se apresenta no método "createEndereco"</P>
+    <P> que retorna uma instância nova de "endereco", criando uma classe separada</P>
+    <P> e abstraindo a criação de objetos. </P>
+
+    <p><b>Participantes: Naira Rivelli, Ayrton Senna e João Rosa</b></p>
+  </div>
+</div>
+</body>
+</html>
